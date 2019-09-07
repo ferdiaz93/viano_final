@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans&display=swap');
+/* font-family: 'Noto Sans', sans-serif; TIPOGRAFÍA: RALEWAY */
+@import url('https://fonts.googleapis.com/css?family=Oswald:400&display=swap');
+/*font-family: 'Oswald', sans-serif; */
+@import url('https://fonts.googleapis.com/css?family=Oswald:200&display=swap');
+/* font-family: 'Oswald', sans-serif; */
+
+*{
+    padding: 0; /* espacio entre el contenido y el contenedor*/
+    margin: 0; /* establece el margen para los cuatro lados*/
+
+}
+
+
+body{
+    background-image: url('../../img/fondoViano.jpg');
+    background-position: center;
+    background-size: 100% 100%;
+    background-attachment: fixed; /*scroll de la imagen*/
+}
+
+
+.section {
+    width: 100%;
+    
+}
+
+.homeSection {
+    display: none;
+    color: white;
+    padding: 15%;
+    height: auto;
+    padding-left: 5%; /*se corre a la derecha*/
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 22px;
+}
+
+.homeSection p {
+    color: navy;
+    font-size: 20px;
+    
+}
+
+.logoSection img {
+    width: 100%;
+    height: auto;
+}
+
+.logoSection {
+        width: 20%;
+        height: 20%;
+        padding-left: 5%;
+        padding: 4%;
+        padding-left: 8%; /*se corre a la derecha*/
+}
+
+/* Contenedor Nuestra Historia */
+.nuestraHistoria {
+    display: none;
+    background-color: white;
+    color: #000769;
+    padding: 3%;
+    height: auto;
+    padding-left: 15%; /*se corre a la derecha*/
+    font-family: 'Oswald', sans-serif;
+    font-size: 33px;
+}
+
+.nuestraHistoria span {
+    color:#000769;
+    font-size: 53px;
+    font-weight: lighter;
+    
+}
+
+.textoSection2 {
+    color: rgb(43, 42, 42);
+    width: 40%;
+    font-family: 'Noto Sans';
+    padding-bottom: 6%; 
+    font-size: 18px !important;
+
+}
+
+.textoSection2 p {
+    padding-bottom: 3%; /* Abajo. espacio entre el contenido y el contenedor*/
+    padding-top: 3%; /* Arriba. espacio entre el contenido y el contenedor*/
+    
+
+}
+
+
+/* Contenedor productos */
+.productosSection {
+    background-color: white;
+    display: block;
+    color: #000769;
+    padding: 3%;
+    height: auto;
+    padding-left: 15%; /*se corre a la derecha*/
+    font-family: 'Oswald', sans-serif;
+    font-size: 33px;
+}
+
+.productosSection p {
+    color: #000769;
+    font-family: 'Oswald', sans-serif;
+    font-size: 43px;
+    font-weight: lighter;
+}
+
+.productoViano img {
+    width: 100%;
+    height: auto;
+
+}
+
+.productoViano {
+    width: 75%;
+    
+}
+
+
+.carruselViano img {
+    width: 100%;
+    height: auto;
+
+}
+
+.carruselViano {
+    width: 20%;
+    display: flex; /* Pasaron uno al lado del otro. sirve para que el contenido se pueda acomodar o estirar y por defecto en row (en fila) */
+    padding: 7%;
+    
+}
+
+
+
+
+
