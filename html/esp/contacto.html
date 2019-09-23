@@ -2,85 +2,91 @@
 <html lang="en">
 
 <!--CONVIENE NO DEFINIR ALTURA DE LOS DIVS EN CSS SINO DEJAR QUE SE AJUSTEN ACORDE A SU CONTENIDO-->
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="../../css/styleContacto.css"> <!--se coloca ../ para salir y encontrar la carpeta correspondiente -->
 
-    <!-- PRIMERO LO DIVIDIMOS EN SECCIONES HEADER - SECTION- FOOTER Y CREAR EL ESQUELETO -->
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="../../css/styleContacto.css">
+  <!--se coloca ../ para salir y encontrar la carpeta correspondiente -->
 
-    <title>Hello, world!</title>
-  </head>
+  <!-- PRIMERO LO DIVIDIMOS EN SECCIONES HEADER - SECTION- FOOTER Y CREAR EL ESQUELETO -->
 
-  <body>
-    <nav class="menuNav">
-        <div class="logos"> <!--DIV de "division" -división . Sirve para crear secciones o agrupar contenidos. Puede contener: Texto, y/o cero o más elementos en bloque o en linea.
-          Atributos--> <!-- CLASS	Asigna nombres de clases al elemento. Por defecto, clases CSS.-->
-          <img src="../../img/homelogoviano.png" alt="VIANO, MEDIDAS DE CAPACIDAD">
-        </div>
+  <title>Hello, world!</title>
+</head>
 
-        <ul class="botonesNav"> <!--Crea un menú de navegación. <nav> <ul> <li> <a </a> </li> </ul> </nav>-->
-          <!--PARA CREAR VARIOS ELEMENTOS A LA VEZ * Y LA CANTIDAD A REPETIR
+<body>
+  <nav class="menuNav">
+    <div class="logos">
+      <!--DIV de "division" -división . Sirve para crear secciones o agrupar contenidos. Puede contener: Texto, y/o cero o más elementos en bloque o en linea.
+          Atributos-->
+      <!-- CLASS	Asigna nombres de clases al elemento. Por defecto, clases CSS.-->
+      <img src="../../img/homelogoviano.png" alt="VIANO, MEDIDAS DE CAPACIDAD">
+    </div>
+
+    <ul class="botonesNav">
+      <!--Crea un menú de navegación. <nav> <ul> <li> <a </a> </li> </ul> </nav>-->
+      <!--PARA CREAR VARIOS ELEMENTOS A LA VEZ * Y LA CANTIDAD A REPETIR
           PARA BAJAR TODAS LAS ETIQUETAS AL MISMO TIEMPO ALT TE POSICIONAS Y ESCRIBIR EN SIMULTÁNEO ALT Y LUEGO ENTER-->
-          <li>
-            <a href="">
-              Home
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Nuestra Historia
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Productos y Servicios
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Certificaciones
-            </a>
-          </li>
-          <li>
-            <a href="">
-              Contacto
-            </a>
-          </li>
-        </ul>
-        
-        <div class="logo2"> <!--el div abarca por default el ancho de la página-->
-          <img src="../../img/isologoblanco.png" alt="Logo ISO">
-        </div>
-    </nav>
+      <li>
+        <a href="">
+          Home
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Nuestra Historia
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Productos y Servicios
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Certificaciones
+        </a>
+      </li>
+      <li>
+        <a href="">
+          Contacto
+        </a>
+      </li>
+    </ul>
 
-<!--SHIFT TAB PARA TABULAR PARA ATRÁS Y TAB PARA TABULAR -->
-<section class="section">
+    <div class="logo2">
+      <!--el div abarca por default el ancho de la página-->
+      <img src="../../img/isologoblanco.png" alt="Logo ISO">
+    </div>
+  </nav>
+
+  <!--SHIFT TAB PARA TABULAR PARA ATRÁS Y TAB PARA TABULAR -->
+  <section class="section">
 
     <div class="textoSection">
       <h2>
         VIANO
-      </h2>  
+      </h2>
     </div>
     <div class="textoSection2">
       <p>
-          Dirección: Zapiola 1144   
+        Dirección: Zapiola 1144
       </p>
       <p>
-          San Justo - Partido de la Matanza  
+        San Justo - Partido de la Matanza
       </p>
       <p>
-          CP 1754- Provincia de Buenos Aires  
+        CP 1754- Provincia de Buenos Aires
       </p>
       <div class="textoAtencionAlCliente">
-          <h4>
-            Atención al Cliente
-          </h4>
-          <p>
-            Tel: + 54 9 11 3566 4142
-          </p>
-        </div>
+        <h4>
+          Atención al Cliente
+        </h4>
+        <p>
+          Tel: + 54 9 11 3566 4142
+        </p>
+      </div>
     </div>
 
     <!-- FORMULARIO: <form>, <label>, <input>, <textarea>, y <button>.
@@ -90,53 +96,58 @@
       recolectada por el formulario debería enviarse.
       El atributo "method" define con que método HTTP se enviará la información 
       (puede ser "get" o "post"). -->
-        <form action="/my-handling-form-page" method="post">
-          <div>
-              <label for="name">Nombre*</label> <!--El elemento label representa una etiqueta que puede ser asociada a un control de formulario, y que se supone provee una descripción corta para éste. Los navegadores pueden enlazar ambos elementos permitiendo que los usuarios establezcan el enfoque sobre el control al hacer clic en su etiqueta.-->
-              <input type="text" id="name" /> <!--El elemento HTML <input> se usa para crear controles interactivos para formularios basados en la web, que reciban datos del usuario. La forma en que <input> funciona varía considerablemente dependiendo del valor de su atributo type.-->
-          </div>
-          <div>
-              <label for="mail">Email*</label>
-              <input type="email" id="mail" />
-          </div>
-          <div>
-              <label for="msg">Message*</label>
-              <textarea id="msg"></textarea>
-          </div>
-          
-          <div class="button"> <!--Botón sin un comportamiento específico.-->
-              <button type="submit">Enviar</button>
-          </div>
-      </form>
-    
-    </section>
 
-    <footer class="footer">
+    <form action="https://formspree.io/fernandodiaz1209@gmail.com" method="POST">
+      <input type="text" name="name">
+      <input type="email" name="_replyto">
+      <input type="submit" value="Send">
+    </form>
 
-      <div class="textoFooter">
-        <h3>
-          Contacto
-        </h3>
-        <p>
-          Tel: + 54 9 11 3566 4142
-        </p>
+    <form action="https://formspree.io/fernandodiaz1209@gmail.com" method="post">
+      <label for="name">Nombre*</label>
+      <!--El elemento label representa una etiqueta que puede ser asociada a un control de formulario, y que se supone provee una descripción corta para éste. Los navegadores pueden enlazar ambos elementos permitiendo que los usuarios establezcan el enfoque sobre el control al hacer clic en su etiqueta.-->
+      <input type="text" id="name" name="name" />
+      <!--El elemento HTML <input> se usa para crear controles interactivos para formularios basados en la web, que reciban datos del usuario. La forma en que <input> funciona varía considerablemente dependiendo del valor de su atributo type.-->
+      <label for="mail">Email*</label>
+      <input type="email" name="_replyto" id="mail" />
+      <label for="msg">Message*</label>
+      <textarea name="message" id="msg" type="textarea"></textarea>
+
+      <div class="button">
+        <!--Botón sin un comportamiento específico.-->
+        <input type="submit" value="Send">
       </div>
+    </form>
 
-      <div class="textoFooter"> 
-        <p>
-          Zapiola 1144, San Justo
-        </p>
-        <p>
-          Partido de la Matanza
-        </p>
-      </div>
+  </section>
 
-      <div class="textoFooter"> 
-        <p>
-            CP 1754- Provincia de Buenos Aires 
-        </p>
-      </div>
+  <footer class="footer">
 
-    </footer>
-  </body>
+    <div class="textoFooter">
+      <h3>
+        Contacto
+      </h3>
+      <p>
+        Tel: + 54 9 11 3566 4142
+      </p>
+    </div>
+
+    <div class="textoFooter">
+      <p>
+        Zapiola 1144, San Justo
+      </p>
+      <p>
+        Partido de la Matanza
+      </p>
+    </div>
+
+    <div class="textoFooter">
+      <p>
+        CP 1754- Provincia de Buenos Aires
+      </p>
+    </div>
+
+  </footer>
+</body>
+
 </html>
